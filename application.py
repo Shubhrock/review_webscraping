@@ -9,7 +9,10 @@ import collections
 from pymongo.mongo_client import MongoClient
 import urllib
 
-app = Flask(__name__)
+application = Flask(__name__) # initializing a flask app
+app=application
+
+#app = Flask(__name__)
 
 @app.route('/', methods = ['GET'])
 @cross_origin()
